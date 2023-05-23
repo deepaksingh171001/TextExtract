@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <title>TextExtract</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="drop-zone">
+      <span class="drop-zone__prompt"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+          viewBox="0 0 100 100">
+          <defs>
+            <marker id="gis3600" orient="auto" refX="0" refY="0">
+              <path id="gis3601" fill="#000" fill-opacity="1" fill-rule="evenodd" stroke="#000" stroke-opacity="1"
+                stroke-width="1pt" d="m5.77 0l-8.65 5V-5l8.65 5z" transform="scale(.25)" />
+            </marker>
+            <marker id="gis3602" orient="auto" refX="0" refY="0">
+              <path id="gis3603" fill="#000" fill-opacity="1" fill-rule="evenodd" stroke="#000" stroke-opacity="1"
+                stroke-width="1pt" d="m5.77 0l-8.65 5V-5Z" transform="scale(.25)" />
+            </marker>
+          </defs>
+          <path id="gis3604" fill="currentColor" fill-opacity="1" fill-rule="nonzero" stroke="none"
+            stroke-dasharray="none" stroke-dashoffset="0" stroke-linecap="round" stroke-linejoin="round"
+            stroke-miterlimit="4" stroke-opacity="1" stroke-width="5"
+            d="M0 21.127v57.746c.001 1.82 1.886 3.03 3.541 2.272c0 0 3.455-1.604 11.104-3.297c7.649-1.693 19.34-3.405 35.355-3.405c16.015 0 27.706 1.712 35.355 3.405c7.65 1.693 11.104 3.297 11.104 3.297c1.655.757 3.54-.451 3.541-2.272V21.127c-.001-1.79-1.827-2.998-3.475-2.3c0 0-15.746 6.73-46.525 6.73c-30.779 0-46.525-6.73-46.525-6.73c-1.688-.603-3.434.953-3.475 2.3Zm5 3.504c6.39 2.027 21.643 5.926 45 5.926s38.61-3.899 45-5.926v44.426c-7.977.228-16.18-.56-24.992-4.09L51.795 44.604L36.416 57.508l-7.424-4.95L14.4 68.042c-3.017 1.35-5.923 3.034-9.4 3.004Zm70.04 12.846a6.718 6.718 0 0 0-6.628 6.716a6.718 6.718 0 1 0 6.627-6.716z"
+            color="currentColor" color-interpolation="sRGB" color-rendering="auto" display="inline" opacity="1"
+            vector-effect="none" visibility="visible" />
+        </svg><br>Drop file here or click to upload</span>
+      <input type="file" name="myFile" class="drop-zone__input">
+    </div>
+    <div id="prediction">
+      <div class="btn">
+        <span class="copy">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+              <path d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2zm0 7h6m-6 4h6" />
+            </g>
+          </svg>
+        </span>
+        <span class="hide-pred"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M400 145.49L366.51 112L256 222.51L145.49 112L112 145.49L222.51 256L112 366.51L145.49 400L256 289.49L366.51 400L400 366.51L289.49 256L400 145.49z" />
+          </svg></span>
+      </div>
+      <div class="pred-text"></div>
+
+    </div>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
